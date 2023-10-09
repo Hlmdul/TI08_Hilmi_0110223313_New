@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <!-- tambahin icon di sebelah title -->
     <!-- "https://www.flaticon.com/free-icons/pizza" Pizza icons created by Freepik - Flaticon -->
     <link rel="icon" href="assets/img/pizza.png" type="image/icon type">
 
@@ -24,7 +23,7 @@
             </p>
         </div>
         <div style="display:block; align-self: center; background-color:whitesmoke; padding: 5%;">
-        <form >
+        <form action="confirmation.html">
             <fieldset style="border-color:navy; margin:3%; border-radius: 20px;">
                 <legend align="center">Order Pizza</legend>
             <div class="customer-information">
@@ -32,24 +31,40 @@
                     <legend align="center">Customer Information</legend>
                     <table class="customer-form-table" cellspacing="10">
                         <tr>
-                            <td>Name</td>
-                            <td>: <input type="text" name="name" id="name" placeholder="Your Name"></td>
+                            <td>
+                                <label for="name">Name</label>
+                            </td>
+                            <td>
+                                : <input type="text" name="name" id="name" placeholder="Your Name">
                             </td>
                         </tr>
                         <tr>
-                            <td>Address</td>
-                            <td>: <input type="text" name="address" id="address" placeholder="Your Address"></td>
+                            <td>
+                                <label for="name">Address</label>
+                            </td>
+                            <td>
+                                : <input type="text" name="address" id="address" placeholder="Your Address">
+                            </td>
                         </tr>
                         <tr>
-                            <td>Telephone Number</td>
-                            <td>: <input type="text" name="number" id="number" placeholder="Your Number"></td>
+                            <td>
+                                <label for="number">Telephone Number</label>
+                            </td>
+                            <td>
+                                : <input type="text" name="number" id="number" placeholder="Your Number">
+                            </td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td>: <input type="text" name="email" id="email" placeholder="Your Email"></td>
+                            <td>
+                                <label for="email">Email</label>Email
+                            </td>
+                            <td>
+                                : <input type="text" name="email" id="email" placeholder="Your Email">
+                            </td>
                         </tr>
                         <tr>
-                            <td colspan="2">Delivery Instruction :
+                            <td colspan="2">
+                                <label for="instructio">Delivery Instruction </label>:
                                 <br>
                                 <textarea name="instruction" id="instruction" placeholder="floor number, etc." cols="34" rows="3"></textarea>
                             </td>
@@ -64,7 +79,11 @@
                     Pizza Specs:
                     </p>
 
-                    <p>Crust Type (Choose one):</p>
+                    <p>
+                        <label>
+                            Crust Type (Choose one):
+                        </label>
+                    </p>
                     <ul style="list-style:none;">
                         <li>
                             <input type="radio" name="crust" id="crust" value="crust1" checked> Classic White   
@@ -81,28 +100,32 @@
 
                     </ul>
 
-                    <p>Toppings (Choose as many as you want!):</p>
+                    <p>
+                        <label for="topping">Toppings (Choose as many as you want!):
+
+                        </label>
+                    </p>
                     <ul style="list-style:none;">
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping1"> Red Sauce
+                            <input type="checkbox" name="topping" id="topping1" value="redsauce"> Red Sauce
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping2"> White Sauce
+                            <input type="checkbox" name="topping" id="topping2" value="whitesauce"> White Sauce
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping3"> Mozzarrella Cheese
+                            <input type="checkbox" name="topping" id="topping3" value="mozzarella"> Mozzarrella Cheese
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping4"> Pepperoni
+                            <input type="checkbox" name="topping" id="topping4" value="pepperoni"> Pepperoni
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping5"> Mushrooms
+                            <input type="checkbox" name="topping" id="topping5" value="mushrooms"> Mushrooms
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping6"> Peppers
+                            <input type="checkbox" name="topping" id="topping6" value="peppers"> Peppers
                         </li>
                         <li>
-                            <input type="checkbox" name="topping" id="topping" value="topping7"> Anchovies   
+                            <input type="checkbox" name="topping" id="topping7" value="anchovies"> Anchovies   
                         </li>
                     </ul>
                 </fieldset>
@@ -113,10 +136,7 @@
                         <input type="number" name="amount" id="amount" min="1" max="10" value="1">
                     </p>
                     <!-- tombol konfirmasi pesanan - arahkan ke confirmation.html -->
-                    <button>
-                        <a style="text-decoration: none; color:black" href="confirmation.html">Bring me my PIZZA!</button>
-                        </a>
-                    </button>
+                    <input type="submit" name="submit" id="submit" value="Bring me my PIZZA!">
                     <!-- tombol untuk kosongkan form -->
                     <input type="reset" name="reset" id="reset" value="reset my order details" style="margin-left:30px">
             </div>
