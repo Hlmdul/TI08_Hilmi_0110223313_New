@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Sensus Penduduk</title>
+</head>
+<body>
+    <h1 align="center">Form Data Sensus Penduduk</h1>
+
+    <form action="hasil.html">
+        <fieldset style="border-radius:10px; border-style:solid; border-color:black">
+            <legend>Form Data Sensus Penduduk</legend>
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="tulis nama anda" </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>:</td>
+                <td>
+                    <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="kelamin">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="kelamin" value="laki">Laki-laki
+                    <input type="radio" name="kelamin" value="perempuan">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>:</td>
+                <td>
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="foto">Foto</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="foto" id="foto">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" colspan="3"><input type="submit" value="Kirim Form"><input type="reset" value="Hapus Form"> </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
