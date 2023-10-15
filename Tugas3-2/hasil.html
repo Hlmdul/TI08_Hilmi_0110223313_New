@@ -12,7 +12,7 @@
         <div style="display:block; align-self: center; padding:20px">
             <form action="hasil.html">
                 <fieldset style="background-color:rgb(255, 253, 245) ;border-color:brown ;border-style: solid ; border-width: 6px ;border-radius: 10px; width:100%; height:100%px; margin:0, auto; max-width: 920px; padding: 0;">
-                    <legend align="center" style="font-size:40px; font-family: 'Young Serif', serif;"><h3>Shopily Seller</h3></legend>
+                    <legend align="center" style="font-size:40px; font-family: 'Young Serif', serif;"><h3>Shopily</h3></legend>
             <table cellspacing="0" style="font-family: 'Gabarito', cursive; ;width:100%; height:680px; margin:0, auto; max-width: 100%; ">
                 <thead>
                     <tr height="6.25%">
@@ -25,12 +25,12 @@
                 </thead>
                 <tbody>
                     <tr height="6.25%" align="center" style="background-color: black;">
-                        <td colspan="4"><a style="text-decoration:none; color:brown; margin-left:0px" href=".html">Home</a>
-                        <a style="text-decoration:none; color:brown; margin-left:30px" href=".html">Generate Link</a>
-                        <a style="text-decoration:none; color:brown; margin-left:30px" href=".html">Transaction History</a>
+                        <td colspan="6"><a style="text-decoration:none; color:brown; margin-left:0px" href=".html">Home</a>
+                        <a style="text-decoration:none; color:brown; margin-left:30px" href=".html">Register</a>
                         <a style="text-decoration:none; color:brown; margin-left:30px" href=".html">Policy</a>
-                        <td align="right"><a style="text-decoration:none; color:brown;" href=".html;">Logout</a></td>
-                        <td></td>
+                        <a style="text-decoration:none; color:brown; margin-left:30px" href=".html">About</a>
+                        <td align="right"><a style="text-decoration:none; color:brown;" href=".html;"></a></td>
+                        
                         
                     </tr>
                     <tr height="6.25%">
@@ -43,38 +43,31 @@
                     </tr>
                     <tr height="6.25%">
                         <td colspan="2" rowspan="4" valign="bottom">
-                            <div id="dropContainer" style="background-color:whitesmoke ;border-radius:50px ;border:1px solid black;height:100%; text-align:center; margin-left:30px"> 
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                
-                                <p>Drop Product Photo Here
-                                    <br>
-                                    or
-                                    <br>
-                                    <a href="">choose file</a></p>
+                            <div id="dropContainer" style="height:100%; text-align:center; margin-left:30px"> 
+                                <img src="assets/img/macbook.jpg" alt="Macbook Air 13 2020" style="width: 100%; border: 2px solid; border-radius:20px">
                              </div>
                         </td>
-                        <td style="padding-left: 50px;"><label for="productname">Product Name</label></td>
+                        <td style="padding-left: 50px;">Product Name</td>
                         <td>:</td>
                         <td colspan="2" style="padding-top:6px" valign="center">
-                           <textarea name="productname" id="productname" cols="30" rows="1" style="margin:0%" placeholder="enter the product name">Macbook Air 13" 2020</textarea>
-                           
+                            Macbook Air 13" 2020
                         </td>
                         
                         
                     </tr>
                     <tr height="6.25%">
-                        <td valign="top" style="padding-left: 50px; padding-top:15px "><label for="description">Description</label></td>
-                        <td valign="top" style="padding-top:15px">:</td>
-                        <td colspan="3" rowspan="2" style="height:fit-content">
-                            <textarea name="description" id="description" cols="30" rows="8" style="margin:0px" placeholder="enter the description">
-                                Year :
+                        <td valign="top" style="padding-left: 50px;">Description</td>
+                        <td valign="top">:</td>
+                        <td colspan="3" rowspan="2" valign="top">
+                                Year : 2020
+                                <br>
+                                <br>
 
-                                Model :
+                                Model : 8/256 GB Space Grey
+                                <br>
+                                <br>
 
-                                Condition :
+                                Condition : 2nd hand (95%)
                             </textarea>
                         </td>
                         
@@ -86,61 +79,52 @@
                     </tr>
                     
                     <tr height="6.25%">
-                        <td style="padding-left: 50px;"><label for="accountnumber">Account Number</label></td>
+                        <td style="padding-left: 50px;">Price</td>
                         <td>:</td>
                         <td>
-                            <textarea name="accountnumber" id="accountnumber" cols="30" rows="1" style="margin:0%" placeholder="enter the account number"></textarea>
+                            IDR 12.999.000
                         </td>
                         <td></td>
                         
                     </tr>
                     <tr height="6.25%">
                         <td colspan="2" align="center" >
-                            <input style="margin-left:30px" type="file" name="file" id="file" enctype="multipart/form-data">
+                           
                         </td>
                         
-                        <td style="padding-left: 50px;"><label for="bank">Bank</label></td>
+                        <td style="padding-left: 50px;"><label for="payment">Payment Method</label></td>
                         <td>:</td>
                         <td>
-                            <select name="bank" id="bank">
-                                <option value="bca">-- choose your bank -- </option>
-                                <option value="bca">BCA</option>
-                                <option value="bni">BNI</option>
-                                <option value="bri">BRI</option>
-                                <option value="mandiri">Mandiri</option>
+                            <select name="payment" id="payment">
+                                <option value="">-- choose payment method -- </option>
+                                <option value="bca">Bank Transfer</option>
+                                <option value="bni">Credit Card</option>
+                                <option value="bri">Paylater</option>
                         </td>
                         <td></td>
                     </tr>
                     <tr height="6.25%">
                         <td></td>
                         <td></td>
-                        <td style="padding-left: 50px;"><label for="accountholder">Account Holder</label>r</td>
+                        <td style="padding-left: 50px;"><label for="account-holder">Account Holder </label></td>
                         <td>:</td>
                         <td>
-                            <textarea name="accountholder" id="accountholder" cols="30" rows="1" style="margin:0%" placeholder="enter the account holder Name"></textarea>
+                            <textarea name="account-holder" id="account-holder" cols="30" rows="1" style="margin:0%" placeholder="enter the account holder Name"></textarea>
                         </td>
                         <td></td>
                     </tr>
                     <tr height="6.25%">
                         <td></td>
                         <td></td>
-                        <td style="padding-left: 50px;"><label for="transact-amount">Transaction</label></td>
+                        <td style="padding-left: 50px;"><label for="account-number">Account Number</label></td>
                         <td>:</td>
                         <td>
-                            <!-- make a dropdown option ranging from 1 to 3 -->
-                            <input type="number" name="transact-amount" min="1" max="3" placeholder="1">
+                            <textarea name="account-number" id="account-number" cols="30" rows="1" style="margin:0%" placeholder="enter account number"></textarea>
                                 
                         </td>
                         <td></td>
                     </tr>
-                    <tr height="6.25%">
-                        <td></td>
-                        <td></td>
-                        <td style="padding-left: 50px;"></td>
-                        <td></td>
-                        <td  valign="top"><i style="font-size:small">*if the transaction is for 3 person, choose 3 in the field above</i></td>
-                        
-                    </tr>
+                   
                     <tr height="6.25%">
                         <td></td>
                         <td></td>
@@ -186,7 +170,7 @@
                         <td></td>
                         <td style="padding-left: 50px;"></td>
                         <td></td>
-                        <td><input type="submit" value="Generate Nabr Link"></td>
+                        <td><input type="submit" value="Proceed to Payment"></td>
                         <td></td>
                     </tr>
 
