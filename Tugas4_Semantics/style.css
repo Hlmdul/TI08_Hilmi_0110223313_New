@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width : 1080px;
+    margin: 0 auto;
+    background-color: #0d0c0d;
+}
+
+header {
+    text-align:center;
+    background-color: #cfcad1;
+}
+
+
+section {
+    background-color: #cfcad1;
+}
+
+.profile {
+    display:inline-block;
+    width: 100%;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    background-color: #cfcad1;
+}
+
+.about {
+    float:left;
+    width: 700px;
+    height: 300px;
+}
+
