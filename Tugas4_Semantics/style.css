@@ -1,37 +1,98 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    width : 1080px;
-    margin: 0 auto;
-    background-color: #0d0c0d;
+    margin: 0px;
+    /* Photo by John Lee: https://www.pexels.com/photo/facade-of-contemporary-skyscrapers-in-city-district-6165875/ */
+    background-image: url('assets/img/bg.jpg'); 
+    background-size: 100%;
 }
 
 header {
-    text-align:center;
-    background-color: #cfcad1;
+    background-color: beige;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    padding-left: 30px;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    height: 100px;
 }
 
-
-section {
-    background-color: #cfcad1;
+header img {
+    margin-right: 20px;
+    height: 80px;
+    width: 80px;
 }
 
-.profile {
-    display:inline-block;
+nav {
+    background-color: black;
     width: 100%;
+    margin: 0px auto;
+    margin-bottom: 0;
+    display: flex;
 }
 
-aside {
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    background-color: whitesmoke;
+    max-width: 1080px;
+    margin: 0px auto;
+}
+
+article {
+    background-color: whitesmoke;
+    max-width: 800px;
     float: left;
-    width: 300px;
-    background-color: #cfcad1;
+    
 }
 
-.about {
-    float:left;
-    width: 700px;
-    height: 300px;
+article section {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
+
+aside { 
+    background-color: whitesmoke;
+    max-width: 260px;
+    float: left;
+}
+
+aside .photos {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: thistle;
+    margin: 0px auto;
+    padding: 5px;
+    clear: both;
+    text-align: center;
+}
+
+
+
 
