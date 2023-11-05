@@ -1,0 +1,207 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+* {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: justify;
+    background-color: azure;
+}
+
+#header {
+    text-align: center;
+    width: 100%;
+    background-color:azure;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#header img {
+    width: 50px;
+    height: 50px;
+    border: goldenrod 3px solid;
+    padding: 00px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: azure;
+    cursor:grab;
+}
+
+#header img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 20px goldenrod;
+
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: azure;
+    margin-top: 0px;
+}
+
+#header #soekarno {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: azure;
+}
+
+#header blockquote {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+.nav{
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav ul {
+    text-align: center;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin: 10px;
+    color: goldenrod;
+}
+
+.nav a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.nav a:link {
+    text-decoration: none;
+    color: black;
+    padding:5px;
+}
+
+.nav a:hover {
+    color: red;
+    background-color: goldenrod;
+    padding: 5px;
+    transition: 0.8s;
+}
+
+.gambar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gambar img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    
+    border-radius: 30px;
+}
+
+.gambar img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    /* add drop shadow */
+    box-shadow: 0 0 20px goldenrod;
+    
+}
+
+.isi {
+    max-width: 100%;
+    margin: 50px auto;
+    
+}
+
+.fp::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+#profil {
+    max-width: 900px;
+    margin: 50px auto;
+    border: 3px solid goldenrod;
+    padding: 20px;
+}
+
+#profil h3 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 30px;
+}
+
+#profil ul li {
+    list-style:square;
+}
+
+h3 {
+    color: goldenrod;
+    font-size: 30px;
+}
+
+#beternak {
+    margin-bottom: 50px;
+}
+
+.koleksi {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.koleksi img {
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.promo {
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px auto;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.promo ol li {
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    display: inline;
+}
+
+.promo ol li a {
+    text-decoration: none;
+    color: goldenrod;
+    
+    padding: 5px;
+}
+
+.promo ol li a:hover {
+    color: red;
+    background-color: bisque;
+    padding: 5px;
+}
+
+.promo strong {
+    color: red;
+}
+
+.promo strong:hover {
+    
+    font-size: larger;
+}
