@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Pra UTS</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h4>Data Karyawan</h4>
+            <nav>
+                <ul>
+                    <li><a href="">Master Data</a></li>
+                    <li><a href="">Tambah Data</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section class="form-karyawan">
+                <form action="">
+                    <h2>FORM ENTRY DATA PEGAWAI</h2>
+                    <hr>
+                <div>
+                    <label for="nik">NIK: </label>
+                    <input type="text" name="nik" id="nik" placeholder="Masukkan NIK">
+                </div>
+            
+                <div>
+                    <label for="nama">Nama: </label>
+                    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama">
+                </div>
+
+                <div>
+                    <label for="tempat-lahir">Tempat Lahir: </label>
+                    <input type="text" name="tempat-lahir" id="tempat-lahir" placeholder="Masukkan Tempat Lahir">
+                </div>
+
+                <div>
+                    <label for="tanggal-lahir">Tanggal Lahir: </label>
+                    <input type="date" name="tanggal-lahir" id="tanggal-lahir">
+                </div>
+
+                <div class="cont-alamat">
+                    <label for="alamat">Alamat: </label>
+                    <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Masukkan Alamat"></textarea>
+                </div>
+                <div>
+                    <label for="no-telp">No. Telepon</label>
+                    <input type="text" name="no-telp" id="no-telp" placeholder="Masukkan No. Telepon">
+                </div>
+
+                <div>
+                    <label for="jabatan">Jabatan: </label>
+                    <select name="jabatan" id="jabatan">
+                        <option value="0">-- Jabatan Terakhir --</option>
+                        <option value="manager">Manager</option>
+                        <option value="supervisor">Supervisor</option>
+                        <option value="staff">Staff</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="status">Status: </label>
+                    <select name="status" id="status">
+                        <option value="0">-- Aktif / Tidak Aktif --</option>
+                        <option value="aktif">Aktif</option>
+                        <option value="tidak-aktif">Tidak Aktif</option>
+                    </select>
+                </div>
+                 
+                <div class="button">
+                    <input type="submit" name="submit" id="submit" value="Simpan">
+                    <input type="reset" name="reset" id="reset" value="Batal">
+                </div>
+                </form>
+
+            </section>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'kanit', sans-serif;
+}
+
+
+header{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+}
+
+header a:hover {
+    color: #cdcdcd;
+    cursor: pointer;
+}
+
+header h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:20% ;
+}
+
+header h4:hover {
+    color: #cdcdcd;
+    cursor: pointer;
+}
+
+header ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+section.form-karyawan {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+}
+
+form div {
+    margin: 0px auto;
+    width: 50%;
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 40%;
+    font-weight: bold;
+}
+
+.cont-alamat {
+    display: flex;
+    
+}
+
+input,textarea {
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.2px solid #cdcdcd;
+}
+
+.button {
+    align-items: center;
+    margin: 0px auto;
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+    justify-content:center;
+}
+
+select {
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.2px solid #cdcdcd;
+}
+
+#submit, #reset {
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.2px solid #cdcdcd;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    margin: 10px;
+}
+
+#submit:hover, #reset:hover {
+    background-color: #cdcdcd;
+    color: black;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: forestgreen;
+    font-weight: 300;
+}
+
+#reset {
+    background-color: red;
+    font-weight: 300;
+}
+
+input:hover, select:hover {
+    border: 0.2px solid black;
+}
