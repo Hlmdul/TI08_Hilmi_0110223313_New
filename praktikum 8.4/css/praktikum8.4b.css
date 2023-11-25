@@ -1,0 +1,59 @@
+header, aside, article, footer {
+    /* border: 2px black solid; */
+    padding: 10px;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    height: 100vh;
+    width: 100vw;
+    background-color: darksalmon;
+}
+
+header,footer {
+    height: 20%;
+    background-color: aquamarine;
+
+}
+
+
+.content {
+    display: flex;
+    height: 80%;
+}
+
+aside {
+    width: 30%;
+    background-color: darkcyan;
+}
+
+article {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: crimson;
+}
+
+.images {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+img {
+    border: 1px black solid;
+    height: 80%;
+    width: 80%;
+}
+
+
