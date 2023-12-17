@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 4</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 25px;
+    }
+    th, td {
+      width: 150px;
+      height: 50px;
+    }
+    .input {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Menghitung Jumlah Dua Bilangan</h2>
+  <div class="input">
+    <label for="bilangan_1">Bilangan 1: </label>
+    <input type="text" name="bilangan_1" id="bilangan_1" placeholder="masukkan bilangan 1">
+  </div>
+
+  <div class="input">
+    <label for="bilangan_2">Bilangan 2: </label>
+    <input type="text" name="bilangan_2" id="bilangan_2" placeholder="masukkan bilangan 2">
+  </div>
+
+  <button id="hitung">Hitung</button>
+
+  <table>
+    <caption>Hasil Perhitungan Jumlah Dua Bilangan</caption>
+    <tr>
+      <th>Bilangan 2</th>
+      <th></th>
+      <th>Bilangan 1</th>
+      <th></th>
+      <th>Jumlah</th>
+    </tr>
+    <tr>
+      <td id="data_bilangan_1"></td>
+      <td id=> + </td>
+      <td id="data_bilangan_2"></td>
+      <td id=> = </td>
+      <td id="jumlah"></td>
+    </tr>
+  </table>
+
+  <script>
+    const bilangan_1 = document.getElementById('bilangan_1');
+    const bilangan_2 = document.getElementById('bilangan_2');
+    const jumlah = document.getElementById('jumlah');
+    const data_bilangan_1 = document.getElementById('data_bilangan_1');
+    const data_bilangan_2 = document.getElementById('data_bilangan_2');
+
+    const hitung = document.getElementById('hitung');
+
+    hitung.addEventListener('click', function(){
+      data_bilangan_1.innerHTML = bilangan_1.value;
+      data_bilangan_2.innerHTML = bilangan_2.value;
+      jumlah.innerHTML = parseInt(bilangan_1.value) + parseInt(bilangan_2.value);
+    })
+  </script>
+</body>
+</html>

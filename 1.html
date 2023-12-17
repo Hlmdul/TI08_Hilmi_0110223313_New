@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 1</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 25px;
+    }
+    th, td {
+      width: 150px;
+      height: 50px;
+    }
+    .input {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Menghitung Luas dan Keliling Lingkaran</h2>
+    <div class="input">
+    <label for="jari">Jari-jari: </label>
+    <input type="text" name="jari" id="jari" placeholder="masukkan nilai jari-jari">
+  </div>
+  <table>
+    <caption>Hasil Perhitungan Luas dan Keliling</caption>
+    <tr>
+      <th>Jari-jari</th>
+      <th>Luas</th>
+      <th>Keliling</th>
+    </tr>
+    <tr>
+      <td id="nilai_jari"></td>
+      <td id="luas" ></td>
+      <td id="keliling" ></td>
+    </tr>
+  </table>
+  <script>
+    const jari = document.getElementById('jari');
+    const nilai_jari = document.getElementById('nilai_jari');
+    const luas = document.getElementById('luas');
+    const keliling = document.getElementById('keliling');
+
+    jari.addEventListener('keyup', function(){
+      nilai_jari.innerHTML = jari.value;
+      luas.innerHTML = 3.14 * jari.value * jari.value;
+      keliling.innerHTML = 2 * 3.14 * jari.value;
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 2</title>
+</head>
+<body>
+  <h2>Konversi Nilai Rupiah ke Dollar</h2>
+  Nilai Rupiah: <input type="text" id="rupiah" placeholder="masukkan nilai rupiah">
+  <br>
+  <br>
+  <button id="convert">Convert</button>
+  <br>
+  <br>
+  Nilai Dollar: <span id="dollar"></span>
+  <script>
+    const rupiah = document.getElementById('rupiah');
+    const dollar = document.getElementById('dollar');
+    const convert = document.getElementById('convert');
+
+    convert.addEventListener('click', function(){
+      dollar.innerHTML = (rupiah.value * 0.000069).toFixed(2);
+    })
+  </script>
+</body>
+</html>

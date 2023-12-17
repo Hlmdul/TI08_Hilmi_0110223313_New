@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 3</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 25px;
+    }
+    th, td {
+      width: 150px;
+      height: 50px;
+    }
+    .input {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Menghitung Biaya Parkir</h2>
+  <div class="input">
+    <label for="jam_masuk">Jam Masuk: </label>
+    <input type="text" name="jam_masuk" id="jam_masuk" placeholder="masukkan jam masuk">
+  </div>
+
+  <div class="input">
+    <label for="jam_keluar">Jam Keluar: </label>
+    <input type="text" name="jam_keluar" id="jam_keluar" placeholder="masukkan jam keluar">
+  </div>
+
+  <button id="hitung">Hitung</button>
+
+  <table>
+    <caption>Hasil Perhitungan Biaya Parkir</caption>
+    <tr>
+      <th>Jam Masuk</th>
+      <th>Jam Keluar</th>
+      <th>Biaya Parkir</th>
+    </tr>
+    <tr>
+      <td id="data_jam_masuk"></td>
+      <td id="data_jam_keluar"></td>
+      <td id="total_biaya"></td>
+    </tr>
+  </table>
+
+  
+
+  <script>
+    const jam_masuk = document.getElementById('jam_masuk');
+    const jam_keluar = document.getElementById('jam_keluar');
+    let biaya_parkir = 0;
+    const total_biaya = document.getElementById('total_biaya');
+    const data_jam_masuk = document.getElementById('data_jam_masuk');
+    const data_jam_keluar = document.getElementById('data_jam_keluar');
+
+    const hitung = document.getElementById('hitung');
+
+    hitung.addEventListener('click', function(){;
+      if (jam_keluar.value - jam_masuk.value <= 2) {
+      biaya_parkir = 3000;
+      }
+      else {
+      biaya_parkir = 3000 + (jam_keluar.value - jam_masuk.value - 2) * 1000;
+      };
+      data_jam_masuk.innerHTML = jam_masuk.value;
+      data_jam_keluar.innerHTML = jam_keluar.value;
+      total_biaya.innerHTML = biaya_parkir;
+    })
+  </script>
+</body>
+</html>
