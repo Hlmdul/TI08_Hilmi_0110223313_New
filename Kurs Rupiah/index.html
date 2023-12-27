@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konverter Kurs</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #555;
+      text-align: center;
+    }
+
+    #floatingBox {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #currencyForm {
+      margin: 20px;
+    }
+
+    #currency {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #amount {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin: 20px;
+      font-size: 16px;
+    }
+  </style>
+
+  
+</head>
+<body>
+  <div id="floatingBox">
+    <h1>Konverter Kurs</h1>
+
+    <form id="currencyForm">
+      <select id="currency">
+        <option value="9915">Dollar US</option>
+        <option value="13472">Dollar Singapore</option>
+        <option value="874">Ringgit Malaysia</option>
+        <option value="120">Yen Jepan</option>
+        <option value="15888">Euro</option>
+        <option value="3592">Riyal Arab Saudi</option>
+      </select>
+      <input type="number" id="amount" placeholder="Masukkan nominal dalam kurs asing">
+      <button type="submit">Konversi</button>
+    </form>
+    <p id="result">Hasil Konversi: </p>
+  </div>
+
+  <script src="kurs.js"></script>
+</body>
+</html>

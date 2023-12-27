@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Picker</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      #floatingBox {
+      background-color: white;
+      width: 700px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #imagePicker {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 40%;
+      }
+
+      #displayImage {
+        display: block;
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .image-box {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+
+      .image-box {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #displayImage {
+        display: block;
+        margin-top: 10px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="floatingBox">
+      <h1>Image Picker</h1>
+
+      <p>Pilih gambar yang ingin ditampilkan: </p>
+
+      <select id="imagePicker">
+        <option value="anjing">Anjing</option>
+        <option value="bunglon">Bunglon</option>
+        <option value="burungHantu">Burung Hantu</option>
+        <option value="domba">Domba</option>
+        <option value="harimau">Harimau</option>
+        <option value="kelinci">Kelinci</option>
+      </select>
+
+      <div class="image-box">
+        <img id="displayImage" src="img/anjing.jpg" alt="Selected image will appear here">
+      </div>
+    </div>
+
+
+    <script src="picker.js"></script>
+  </body>
+</html>

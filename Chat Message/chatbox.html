@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbox Live STT-NF</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        width: 500px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      .chat-area {
+        height: 500px;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        overflow-y: auto;
+      }
+
+      .input-box {
+        display: flex;
+        padding: 20px;
+      }
+
+      #chat-input {
+        flex-grow: 1;
+        margin-right: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      #send-chat {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #clear-chat {
+        padding: 10px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-area">
+        <div id="chat-area">
+        </div>
+      </div>
+
+      <div class="input-box">
+        <input type="text" id="chat-input">
+        <input type="submit" id="send-chat" value="Send">
+        <button id="clear-chat">Clear Chat</button>
+      </div>
+
+
+      <script src="chat.js"></script>
+    </div>
+  </body>
+</html>

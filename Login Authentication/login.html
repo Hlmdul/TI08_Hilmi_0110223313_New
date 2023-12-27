@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSO Nurulfikri</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f5f5f5;
+      }
+
+      .container {
+        width: 400px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px 30px;
+      }
+
+      .container h1 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: #555;
+        text-align: center;
+      }
+
+      .container label {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .container input {
+        width: 100%;
+        padding: 8px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        border: 1px solid #555;
+      }
+
+      .container input:focus {
+        border: 1px solid dodgerblue;
+      }
+
+      .container input[type="submit"] {
+        border: none;
+        cursor: pointer;
+        background: dodgerblue;
+        color: #fff;
+        transition: 0.3s ease;
+      }
+
+      .container input[type="submit"]:hover {
+        background: #555;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <input type="submit" value="Login" id="login"/>
+          <div id="status"></div>
+
+          <script src="otentikasi.js"></script>
+  </body>
+</html>

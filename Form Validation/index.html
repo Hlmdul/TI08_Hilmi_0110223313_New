@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator</title>
+</head>
+
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #output {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  #container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  
+</style>
+
+<body>
+  <h1>Form Pemesanan Tiket</h1>
+  <div id="container">
+    <form id="form">
+      <div>
+        <input type="text" id="name" placeholder="Nama Pelanggan">
+        <div id="nameError" class="error"> </div>
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Email">
+        <div id="emailError" class="error"> </div>
+      </div>
+      <div>
+        <input type="time" id="departureTime" placeholder="Jam Keberangkatan">
+        <div id="departureTimeError" class="error"> </div>
+      </div>
+      <div>
+        <input type="text" id="destination" placeholder="Tujuan Keberangkatan">
+        <div id="destinationError" class="error"> </div>
+      </div>
+      <div>
+        <input type="number" id="ticketAmount" placeholder="Jumlah Tiket" min="1" max="10">
+        <div id="ticketAmountError" class="error"> </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="output"></div>
+
+  <script src="validator.js
+  "></script>
+</body>
+</html>
